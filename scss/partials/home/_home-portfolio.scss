@@ -1,0 +1,7 @@
+.home-work-wrapper{
+	background: $bg-grey;
+	.home-work-content{
+		@include grid-row();
+		padding: 80px 0;
+	}
+}

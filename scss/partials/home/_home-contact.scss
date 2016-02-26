@@ -1,0 +1,35 @@
+.contact{
+	color:$white;
+	background: linear-gradient(
+		rgba(158, 131, 32, 0.8),
+		rgba(158, 131, 32, 0.8)
+    ), url(../assets/images/contact-bg.jpg);
+    background-size:cover;
+    background-position: center center;
+
+    .contact-wrapper{
+    	@include grid-row();
+    	padding: 80px 0;
+
+    	.form-top{
+    		@include grid-row();
+    		.form-left{
+    			@include grid-column(6);
+    		}
+    		.form-right{
+    			@include grid-column(6);
+    		}
+    	}
+    	.form-bottom{
+    		@include grid-row();
+    		.form-button-wrapper{
+    			@include grid-column(12);
+	    		button{
+	    			float:right;
+	    		}
+    		}
+    	}
+
+    } //contact-wrapper
+
+} //contact

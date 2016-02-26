@@ -1,0 +1,14 @@
+.nav-mobile-button{
+	display:none;
+}
+.mobile-menu-wrapper{
+	display:none;
+	.mobile-menu-close{
+		position: absolute;
+		top: 0;
+		right: 20px;
+		padding: 5px;
+		height: 50px;
+		z-index: 9;
+	}
+}

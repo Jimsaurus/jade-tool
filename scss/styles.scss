@@ -5,14 +5,21 @@
 @import "setup/clearfix";
 @import "setup/normalize";
 //======================================================
+// VENDOR
+//======================================================
+@import "vendor/foundation/foundation";
+//======================================================
 // GLOBAL
 //======================================================
-@import "global/buttons";
+@import "global/global";
 @import "global/colors";
-@import "global/fonts";
-@import "global/links";
-@import "global/mixins";
 @import "global/variables";
+@import "global/typography";
+@import "global/mixins";
+@import "global/helpers";
+@import "global/buttons";
+@import "global/forms";
+@import "global/links";
 //======================================================
 // PARTIALS
 //======================================================
@@ -33,9 +40,5 @@
 	@import "partials/portfolio/portfolio";
 	// PROCESS
 	@import "partials/process/process";
-//======================================================
-// VENDOR
-//======================================================
-@import "vendor/foundation/foundation";
 
 

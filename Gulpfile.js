@@ -1,3 +1,6 @@
+// run this for in seperate terminal window for browsersync
+// browser-sync start --server --files "css/*.css"
+
 //-------------------------------
 // Gulp Plugins
 //-------------------------------

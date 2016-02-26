@@ -7,21 +7,41 @@
 	:)
 	 -->
 	<meta charset="UTF-8">
-	<title>James McDermid: Front-End Developer</title>
+	<title>Jade Tool</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
 	<!-- favicon -->
-	<link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
-	<link rel="icon" href="assets/icon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/images/icons/favicon-96x96.png" type="image/png">
+	<link rel="icon" href="assets/images/icons/favicon-96x96.png" type="image/png">
 	<!-- apple icons -->
-	<link rel="apple-touch-icon" href="assets/icon.png" />
+	<link rel="apple-touch-icon" href="assets/images/icons/apple-icon.png" />
+	<!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json"> -->
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- google fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100|Coustard|Delius+Swash+Caps' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 	<!-- animate.css -->
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- devicons -->
+	<link rel="stylesheet" href="css/devicons.css">
 	<!-- flickity -->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
 	<!-- custom styles -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -35,220 +55,85 @@ HEADER
 		<nav class="nav-top">
 			<div class="nav-wrapper">
 				<div class="nav-brand">
-					<p><a href="#home">&#60;jm&#62;</a></p>
+					<h1><a href="#home">JADE<span>TOOL</span></a></h1>
 				</div><!--nav-brand-->
 				<div class="nav-links">
 					<ul class="nav-main">
-						<a href="#home"><li>HOME</li></a>
-						<a href="#about"><li>ABOUT</li></a>
-						<a href="#portfolio"><li>PORTFOLIO</li></a>
-						<a href="https://medium.com/@Jimsaurus" target="_blank"><li>BLOG</li></a>
-						<a href="#contact"><li>CONTACT</li></a>
+						<li><a href="/services">SERVICES</a></li>
+						<li><a href="/work">OUR WORK</a></li>
+						<li><a href="/about">ABOUT US</a></li>
+						<li><a href="/news">BLOG</a></li>
+						<li><a href="/contact">CONTACT</a></li>
 					</ul><!--nav-main-->
-				</div><!--nav-links-->
-				<div class="nav-mobile">
-					<button class="nav-mobile-button js-menu-trigger sliding-panel-button">
+					<button class="nav-mobile-button js-menu-trigger">
 						<i class="fa fa-bars"></i>
 					</button><!--button-->
-				</div><!--nav-mobike-->
+				</div><!--nav-links-->
 			</div><!--nav-wrapper-->
 		</nav><!--nav-->
 		<!-- start of hidden mobile nav -->
-		<nav class="js-menu sliding-panel-content">
-			<ul>
-		    	<li><a href="#home">HOME</a></li>
-		    	<li><a href="#about">ABOUT</a></li>
-		    	<li><a href="#portfolio">PORTFOLIO</a></li>
-		    	<li><a href="https://medium.com/@Jimsaurus" target="_blank">BLOG</a></li>
-		    	<li><a href="#contact">CONTACT</a></li>
-			</ul>
-			<p><span class ="brand-jm"><a href="#home">&#60;jm&#62;</a></span></p>
-		</nav><!--end-hidden-nav-->
-		<div class="js-menu-screen sliding-panel-fade-screen">
-		</div>
-
-	<!-- ==============================================================
-	HERO
-	=====================================================================-->
-		<section class="hero-wrapper">
-			<div class="hero-text">
-				<span>
-					<p>LOVE TO</p>
-					<p>CODE</p>
-					<p>LOVE TO</p>
-					<p class="typing"></p>
-				</span>
-				<p class="tagline">Hi! I'm James &amp; I'm a</p>
-				<p class="tagline">Front-End Developer</p>
-				<div class="hero-buttons">
-					<a href="#portfolio">MY WORK</a>
-					<a href="#contact">CONTACT</a>
-				</div><!--hero-buttons-->
-				<div class="hero-social">
-					<div class="hero-social-icons"><a href="https://ca.linkedin.com/in/mcdermidjames" target="_blank"><i class="fa fa-linkedin"></i></a></div>
-					<div class="hero-social-icons"><a href="https://twitter.com/Jimsaurus" target="_blank"><i class="fa fa-twitter"></i></a></div>
-					<!-- <div class="hero-social-icons"><a href="https://www.facebook.com/jamesmcdermid" target="_blank"><i class="fa fa-facebook"></i></a></div> -->
-					<div class="hero-social-icons"><a href="http://codepen.io/Jimsaurus/" target="_blank"><i class="fa fa-codepen"></i></a></div>
-					<div class="hero-social-icons"><a href="https://medium.com/@Jimsaurus" target="_blank"><i class="fa fa-medium"></i></a></div>
-					<div class="hero-social-icons"><a href="https://github.com/Jimsaurus" target="_blank"><i class="fa fa-github"></i></a></div>
-				</div><!--hero-social -->
-			</div><!--hero-text-->
-			
-
-
-		</section><!-- hero-wrapper -->
+		<div class="mobile-menu-wrapper">
+			<nav class="mobile-menu">
+			<button class="mobile-menu-close"><i class="fa fa-times"></i></button>
+				<ul>
+			    	<li><a href="/services">SERVICES</a></li>
+					<li><a href="/work">OUR WORK</a></li>
+					<li><a href="/about">ABOUT US</a></li>
+					<li><a href="/news">BLOG</a></li>
+					<li><a href="/contact">CONTACT</a></li>
+				</ul>
+			</nav><!--end-hidden-nav-->
+		</div><!--mobile-menu-wrapper-->
+		<!-- overlay div-->
+		<div class="js-menu-screen sliding-panel-fade-screen"></div>
 	</div><!--header-wrapper-->
 </header><!--header-->
-<!-- ==============================================================
-ABOUT
-=====================================================================-->
-<section class="about" id="about">
-	<div class="about-wrapper">
-		<div class="about-text">
-			<div class="about-headshot hideme"><img src="assets/hero-bg.jpg" alt="James' face"></div>
-			<p class="lead hideme">THANKS FOR STOPPING BY!</p>
-			<div class="underline hideme"></div>
-			<p class="tagline hideme">Here are a few tools and skills I'm passionate about:</p>
-			<div class="about-icon-wrapper hideme">
-				<span class="devicons devicons-html5"></span>
-				<span class="devicons devicons-css3"></span>
-				<span class="devicons devicons-javascript_badge"></span>
-				<span class="devicons devicons-jquery"></span>
-				<span class="devicons devicons-github_badge"></span>
-				<span class="devicons devicons-sass"></span>
-				<span class="devicons devicons-gulp"></span>
-				<span class="devicons devicons-php"></span>
-				<span class="devicons devicons-wordpress"></span>
-			</div>
-		</div>
-		<div class="about-skills-wrapper">
-			<div class="about-skill hideme">
-				<div class="skill-icon"><i class="fa fa-code"></i></div>
-				<div class="skill-text">
-					<h4>ROCK SOLID FUNDAMENTALS</h4>
-					<p>Strong HTML5, CSS3 and JavaScript skills are the bedrock for any front-end developer.  I'm excited about always learning and keeping my skills sharp.</p>
-				</div><!--skill-text-->
-			</div><!--about-skill-->
-			<div class="about-skill hideme">
-				<div class="skill-icon"><i class="fa fa-compass"></i></div>
-				<div class="skill-text">
-					<h4>CLEAN &AMP; SEMANTIC CODE</h4>
-					<p>I'm a stickler for clean, readable code and leave comments everywhere. When I'm working on a team, everyone is on the same page and no time is wasted explaining uncommented or poorly organized code.</p>
-				</div><!--skill-text-->
-			</div><!--about-skill-->
-			<div class="about-skill hideme">
-				<div class="skill-icon"><i class="fa fa-fighter-jet"></i></div>
-				<div class="skill-text skill-last">
-					<h4>EFFICIENT WORKFLOW</h4>
-					<p>I use the latest and greatest workflow efficiency tools to get up and running on a project quickly. Tools such as Gulp, Sass and Git are all integral parts of my workflow.</p>
-				</div><!--skill-text-->
-			</div><!--about-skill-->
-			
-		</div><!--about-skills-wrapper-->
-	</div><!--about-wrapper-->
-	
-	
-</section><!-- about -->
 
 <!-- ==============================================================
-PORTFOLIO
+HERO
 =====================================================================-->
-
-<section class="portfolio" id="portfolio">
-	<div class="portfolio-wrapper">
-		<div class="portfolio-header">
-			<h3>MY RECENT PROJECTS</h3>
-			<div class="underline"></div>
-			<p class="tagline">Check out what I've been working on <a href="#portfolio">here</a> and over on <a href="https://github.com/Jimsaurus" target="_blank">Github</a></p>
-		</div><!--portfolio-header-->
-		<div class="portfolio-items-wrapper">
-
-			<!-- portfolio item 1 -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-img">
-					<div class="overlay"></div>
-					<div class="triangle-left"></div>
-					<img src="assets/portfolio-02.jpg" alt="">
-					<div class="portfolio-share">
-						<a href="https://github.com/Jimsaurus/lcbo-airmiles" target="_blank"><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href="http://jamesmcdermid.ca/lcbo-airmiles-app" target="_blank"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a class="twitter popup"href="http://twitter.com/share?text=Check%20out%20this%20rad%20project%20by%20@jimsaurus!%20"><span>SHARE <i class="fa fa-share"></i></span></a>
-					</div><!--portfolio-share-->
-				</div><!--portfolio-item-img-->
-				<div class="portfolio-item-text">
-					<p class="portfolio-tech">HTML / CSS / API / JS / jQuery</p>
-					<h5 class="hideme">LCBO &amp; AirMiles App</h5>
-					<p class="portfolio-desc">Using the LCBO, Google Maps and Flickity API's I created an app where users search their local LCBO locations for in-stock Airmiles promotion items.</p>
-				</div><!--portfolio-item-text-->
-			</div><!--portfolio-item-->
-			
-			<!-- portfolio item 3 -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-text">
-					<p class="portfolio-tech">HTML / CSS / JS / API / jQuery</p>
-					<h5 class="hideme">JavaScript API Game</h5>
-					<p class="portfolio-desc hideme">Using a mobile-first design and a fan-made Pokemon API, I created a fun, interactive battle system using JavaScript and jQuery.</p>
-				</div><!--portfolio-item-text-->
-				<div class="portfolio-item-img">
-					<div class="overlay"></div>
-					<div class="triangle-right"></div>
-					<img src="assets/portfolio-03.jpg" alt="">
-					<div class="portfolio-share">
-						<a href="https://github.com/Jimsaurus/week-5-project" target="_blank"><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href="http://www.pocketmonsterrumble.com" target="_blank"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a class="twitter popup"href="http://twitter.com/share?text=Check%20out%20this%20rad%20project%20by%20@jimsaurus!%20"><span>SHARE <i class="fa fa-share"></i></span></a>
-					</div><!--portfolio-share-->
-				</div><!--portfolio-item-img-->
-			</div><!--portfolio-item-->
-
-			<!-- portfolio item 1 -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-img">
-					<div class="overlay"></div>
-					<div class="triangle-left"></div>
-					<img src="assets/portfolio-01.jpg" alt="">
-					<div class="portfolio-share">
-						<a href="https://github.com/Jimsaurus/non-profit" target="_blank"><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href="http://jamesmcdermid.ca/nonprofit" target="_blank"><span>VIEW LIVE <i class="fa fa-bolt" target="_blank"></i></span></a>
-						<a class="twitter popup"href="http://twitter.com/share?text=Check%20out%20this%20rad%20project%20by%20@jimsaurus!%20"><span>SHARE <i class="fa fa-share"></i></span></a>
-					</div><!--portfolio-share-->
-				</div><!--portfolio-item-img-->
-				<div class="portfolio-item-text">
-					<p class="portfolio-tech">HTML / CSS / PHP / JS</p>
-					<h5 class="hideme">WordPress Theme</h5>
-					<p class="portfolio-desc hideme">A completely customizable Wordpress theme, ideal for any non-profit organization or small-business.</p>
-				</div><!--portfolio-item-text-->
-			</div><!--portfolio-item-->
-
-			<!-- portfolio item 4 -->
-			<div class="portfolio-item">
-				<div class="portfolio-item-text">
-					<p class="portfolio-tech">HTML / CSS</p>
-					<h5 class="hideme">PSD To Responsive</h5>
-					<p class="portfolio-desc hideme">For this project I converted a static PSD into a beautifully responsive website using HTML &amp; CSS while incorporating three image sliders.</p>
-				</div><!--portfolio-item-text-->
-				<div class="portfolio-item-img">
-					<div class="overlay"></div>
-					<div class="triangle-right"></div>
-					<img src="assets/portfolio-04.jpg" alt="">
-					<div class="portfolio-share">
-						<a href="https://github.com/Jimsaurus/week-3-project" target="_blank"><span>VIEW ON <i class="fa fa-github"></i></span></a>
-						<a href="http://jimsaurus.github.io/week-3-project/" target="_blank"><span>VIEW LIVE <i class="fa fa-bolt"></i></span></a>
-						<a class="twitter popup"href="http://twitter.com/share?text=Check%20out%20this%20rad%20project%20by%20@jimsaurus!%20"><span>SHARE <i class="fa fa-share"></i></span></a>
-					</div><!--portfolio-share-->
-				</div><!--portfolio-item-img-->
-			</div><!--portfolio-item-->
-
-		</div><!--portfolio-items-wrapper-->
-	</div><!--portfolio-wrapper-->
-
-</section><!-- portfolio -->
+<section class="hero-wrapper">
+	<div class="hero-content">
+		<div class="hero-text">
+			<h2>Enhancing Tool Life,<br>Driving Productivity
+			<div class="hero-logo"></div>
+			</h2>
+			<p class="sub-head">Bringing together world-class engineering &amp; industry-leading experience to maximize  your tool performance.</p>
+			<a href="/work" class="btn">See Our Work</a>
+		</div><!--hero-text-->
+	</div><!--hero-content-->
+</section><!-- hero-wrapper -->
+<!-- ==============================================================
+OUR PROCESS
+=====================================================================-->
+<section class="home-process-wrapper">
+	<div class="home-process-content">
+		<div class="section-header">
+			<h3>Our<br>Process</h3>
+			<p class="header-sub">This is what<br>sets us apart from<br>the competition</p>
+		</div><!--section-header-->
+	</div><!--home-process-wrapper-->
+</section><!-- home-process -->
 
 <!-- ==============================================================
-LEARNING
+OUR WORK
 =====================================================================-->
 
-<section class="learning" data-type="background" data-speed="5">
+<section class="home-work-wrapper">
+	<div class="home-work-content">
+		<div class="section-header">
+			<h3>Our<br>Work</h3>
+			<p class="header-sub">Here are a few<br>examples of what we've been<br>working on lately</p>
+		</div><!--section-header-->
+		
+	</div><!--home-work-content-->
+</section><!-- home-work-wrapper -->
+
+<!-- ==============================================================
+TESTIMONIAL MAYBE??
+=====================================================================-->
+
+<!-- <section class="learning" data-type="background" data-speed="5">
 	<div class="learning-wrapper">
 		<div class="learning-text">
 			<h3 class='hideme'>NEVER STOP <span >LEARNING</span>,</h3>
@@ -256,9 +141,9 @@ LEARNING
 			<p class="tagline hideme">Web development never stops moving forward, and neither does a good developer.</p>
 			<p class="tagline hideme">Before each project I choose a new tool or technology to learn, keeping my mind sharp and my skills relevant.</p>
 			<p class="tagline hideme">In my off time you can find me mentoring at a <a href="http://ladieslearningcode.com/">Ladies Learning Code</a> event or reading a good book.</p>
-		</div><!--learning-text-->
-	</div><!--learning-wrapper-->
-</section><!-- learning -->
+		</div>
+	</div>
+</section> -->
 
 <!-- ==============================================================
 CONTACT
@@ -266,25 +151,26 @@ CONTACT
 
 <section class="contact" id="contact">
 	<div class="contact-wrapper">
-		<div class="contact-header">
-			<h3>SAY HELLO! DON'T BE SHY</h3>
-			<div class="underline"></div>
-			<p class="tagline">I love meeting new people! Fill out the form below or shoot me an email <a href="mailto:hello@jamesmcdermid.ca?subject=Hi James!">hello@jamesmcdermid.ca</a></p>
-		</div><!--contact-header-->
+		<div class="section-header">
+			<h3>Drop Us<br>A Line!</h3>
+			<p class="header-sub">We Love <br>Talking About Tools</p>
+		</div><!--section-header-->
 		<div class="contact-form">
-			<form action="http://formspree.io/hello@jamesmcdermid.ca" method="POST">
+			<form action="http://formspree.io/hello@jadetool.ca" method="POST">
 				<div class="form-top">
 					<div class="form-left">
-						<input type="text" placeholder="Full Name">
-						<input type="email" name="_replyto" placeholder="Email Address">
-						<input type="text" placeholder="@Twitter">
+						<input type="text" placeholder="First Name">
+						<input type="text" placeholder="Last Name">
+						<input type="email" name="_replyto" placeholder="Work Email Address">
 					</div><!--form-left-->
 					<div class="form-right">
 						<textarea name="contact-textarea" placeholder="Type message here"></textarea>
 					</div><!--form-right-->
 				</div><!--form-top-->
 				<div class="form-bottom">
-					<button type="submit">SEND MESSAGE</button>
+					<div class="form-button-wrapper">
+						<button class="btn" type="submit">SEND MESSAGE</button>
+					</div>
 				</div><!--form-bottom-->
 				<input type="hidden" name="_subject" value="New submission!" />
 			</form><!--end form-->
@@ -296,45 +182,42 @@ CONTACT
 FOOTER
 =====================================================================-->
 <footer class="footer">
+	<div class="footer-banner">
+		<a href="tel:19056643463">(905) 664-3463</a>
+		<span>|</span>
+		<a href="mailto:hello@jadetool.ca">hello@jadetool.ca</a>
+	</div>
 	<div class="footer-top">
-		<div class="footer-top-wrapper">
-			<!-- <div class="footer-brand">
-				<a class="twitter-timeline" href="https://twitter.com/Jimsaurus" data-widget-id="635645206537367552" height="200" data-chrome="transparent noborders">Tweets by @Jimsaurus</a>
+		<div class="footer-top-content">
+			<div class="footer-top-column">
+				<h5>Business Hours</h5>
+				Monday to Friday<br>
+				6am to 5pm
+			</div>
+			<div class="footer-top-column">
+				<h5>Connect</h5>
+				<ul class="footer-social">
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+					<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-top-column">
+				<h5>Address</h5>
+				320 Hilton Drive<br>
+				Stoney Creek, ON<br>
+				L8E 2N3
+			</div>
 
-
-			</div><
-			<div class="footer-quote">
-				<h6>NEED HELP WITH A PROJECT?</h6>
-				<p>Let's grab a coffee and chat about how we can make something great together!</p>
-				<p class="footer-email"><a href="mailto:hello@jamesmcdermid.ca?subject=Hi James!">hello@jamesmcdermid.ca</a></p>
-			</div>-->
-			<!-- <div class="footer-contact">
-				<h6>CONNECT WITH ME</h6>
-				<p>Reach out on social media.  You can find me making cool stuff with the links below</p> -->
-				<div class="footer-social-wrapper">
-					<div class="footer-social-icons"><a href="https://ca.linkedin.com/in/mcdermidjames" target="_blank"><i class="fa fa-linkedin"></i></a></div>
-					<div class="footer-social-icons"><a href="https://twitter.com/Jimsaurus" target="_blank"><i class="fa fa-twitter"></i></a></div>
-					<!-- <div class="footer-social-icons"><a href="https://www.facebook.com/jamesmcdermid" target="_blank"><i class="fa fa-facebook"></i></a></div> -->
-					<div class="footer-social-icons"><a href="http://codepen.io/Jimsaurus/" target="_blank"><i class="fa fa-codepen"></i></a></div>
-					<div class="footer-social-icons"><a href="https://medium.com/@Jimsaurus" target="_blank"><i class="fa fa-medium"></i></a></div>
-					<div class="footer-social-icons"><a href="https://github.com/Jimsaurus" target="_blank"><i class="fa fa-github"></i></a></div>
-					<div class="footer-social-icons"><a href="mailto:hello@jamesmcdermid.ca?subject=Hi James!"><i class="fa fa-envelope"></i></a></div>
-
-				</div><!--footer-social-icons-->
-		<!-- 	</div><
-		</div> -->
+		</div>
 	</div><!--footer-top-->
 	<div class="footer-bottom">
-		<div class="footer-bottom-wrapper">
-			<p>&copy <a href="www.jamesmcdermid.ca">JAMESMCDERMID.CA</a> | ALL RIGHTS RESERVED</p>
-			<!-- <ul class="nav-footer">
-				<a href="#home"><li>HOME</li></a>
-				<a href="#about"><li>ABOUT</li></a>
-				<a href="#portfolio"><li>PORTFOLIO</li></a>
-				<a href="https://medium.com/@Jimsaurus"><li>BLOG</li></a>
-				<a href="#contact"><li>CONTACT</li></a>
-			</ul> -->
-		</div><!--footer-bottom-wrapper-->
+		<div class="footer-bottom-content">
+			<p>Designed and Developed by <a href="www.jamesmcdermid.ca">James McDermid</a></p>
+			<p>&copy; 2016 <a href="www.jadetool.ca">Jade Tool</a> | All Rights Reserved</p>
+		</div>
 	</div><!--footer-bottom-->
 
 

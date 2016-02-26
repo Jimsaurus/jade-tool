@@ -1,0 +1,17 @@
+header{
+	//@include grid-row();
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:50;
+	color: $white;
+}
+.nav-sticky{
+	position:fixed;
+	background: $white;
+	color: $black;
+	h1{
+		color: $brand-green;
+	}
+}
