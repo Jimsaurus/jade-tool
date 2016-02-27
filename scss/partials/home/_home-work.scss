@@ -11,7 +11,7 @@
 			//color: $gold-lighter;
 		}
 		.header-sub{
-			color: $brand-gold;
+			//color: $brand-gold;
 		}
 		.work-circles-wrapper{
 		@include grid-row();
@@ -19,7 +19,7 @@
 			.work-item{
 				@include grid-column(4);
 				position:relative;
-				margin-top:200px;
+				margin-top:230px;
 
 				h4{
 					font-size: 60px;
@@ -29,7 +29,7 @@
 				.work-stat{
 					font-size: 30px;
 					font-weight: 900;
-					color: $brand-gold;
+					//color: $brand-gold;
 				}
 
 				.work-circle{

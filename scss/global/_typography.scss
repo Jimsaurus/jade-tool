@@ -75,11 +75,26 @@ h6 {
 
 .section-header{
 	@include grid-row();
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 	h3{
 		@include grid-column(6);
 		text-align: right;
 		font-weight: 900;
+		position: relative;
+		z-index:5;
+		&::after{
+			content:'';
+			display:block;
+			position: absolute;
+			top:-12px;
+			right:-56px;
+			height:120px;
+			width:120px;
+			background-color: rgba($brand-gold, 0.2);
+			border-radius: 10px;
+			transform:rotate(45deg);
+			z-index:-1;
+		}
 	}
 	.header-sub{
 		@include grid-column(6);
@@ -94,6 +109,7 @@ p,
 ul,
 ol {
   margin: 0;
+  padding:0;
 }
 
 p:last-child {

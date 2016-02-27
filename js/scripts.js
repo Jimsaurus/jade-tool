@@ -19,8 +19,11 @@ app.init = function(){
 	// =============================================================================
 	// Mobile Menu
 	// =============================================================================
-	$('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-	    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+	$('.js-menu-trigger, .js-menu-close').on('click touchstart',function (e) {
+	    $('body').toggleClass('mobile-nav-active');
+	    $('main').toggleClass('mobile-menu-active');
+	    $('.mobile-menu-wrapper').toggleClass('mobile-menu-open');
+	    $('.mobile-menu-wrapper').fadeToggle(100);
 	    e.preventDefault();
 	  });
 	// =============================================================================
