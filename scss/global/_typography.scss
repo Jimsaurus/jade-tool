@@ -43,8 +43,8 @@ h2 {
 }
 
 h3 {
-  font-size: 38px;
-  line-height: 43px;
+  font-size: 41px;
+  line-height: 45px;
 }
 
 h4 {
@@ -55,9 +55,10 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: $font-weight-black;
   text-transform: uppercase;
+  letter-spacing:2px;
 }
 
 h6 {
@@ -74,14 +75,17 @@ h6 {
 
 .section-header{
 	@include grid-row();
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	h3{
 		@include grid-column(6);
 		text-align: right;
+		font-weight: 900;
 	}
 	.header-sub{
 		@include grid-column(6);
 		text-align: left;
+		line-height: 30px;
+		font-weight: 500;
 	}
 }
 

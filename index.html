@@ -7,7 +7,7 @@
 	:)
 	 -->
 	<meta charset="UTF-8">
-	<title>Jade Tool</title>
+	<title>Jade Tool Enhances Tool Life | Jade Tool</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="assets/images/icons/favicon-96x96.png" type="image/png">
@@ -38,10 +38,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 	<!-- animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- devicons -->
-	<link rel="stylesheet" href="css/devicons.css">
-	<!-- flickity -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
 	<!-- custom styles -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -50,6 +46,19 @@
 <!-- ==============================================================
 HEADER
 =====================================================================-->
+<!-- start of hidden mobile nav -->
+<div class="mobile-menu-wrapper">
+	<nav class="mobile-menu">
+		<button class="mobile-menu-close btn-icon"><i class="fa fa-times"></i></button>
+		<ul>
+	    	<li><a href="/services">SERVICES</a></li>
+			<li><a href="/work">OUR WORK</a></li>
+			<li><a href="/about">ABOUT US</a></li>
+			<li><a href="/news">BLOG</a></li>
+			<li><a href="/contact">CONTACT</a></li>
+		</ul>
+	</nav><!--end-hidden-nav-->
+</div><!--mobile-menu-wrapper-->
 <header class="header">
 	<div class="header-wrapper">
 		<nav class="nav-top">
@@ -65,29 +74,15 @@ HEADER
 						<li><a href="/news">BLOG</a></li>
 						<li><a href="/contact">CONTACT</a></li>
 					</ul><!--nav-main-->
-					<button class="nav-mobile-button js-menu-trigger">
+					<button class="nav-mobile-button btn-icon js-menu-trigger">
 						<i class="fa fa-bars"></i>
 					</button><!--button-->
 				</div><!--nav-links-->
 			</div><!--nav-wrapper-->
 		</nav><!--nav-->
-		<!-- start of hidden mobile nav -->
-		<div class="mobile-menu-wrapper">
-			<nav class="mobile-menu">
-			<button class="mobile-menu-close"><i class="fa fa-times"></i></button>
-				<ul>
-			    	<li><a href="/services">SERVICES</a></li>
-					<li><a href="/work">OUR WORK</a></li>
-					<li><a href="/about">ABOUT US</a></li>
-					<li><a href="/news">BLOG</a></li>
-					<li><a href="/contact">CONTACT</a></li>
-				</ul>
-			</nav><!--end-hidden-nav-->
-		</div><!--mobile-menu-wrapper-->
-		<!-- overlay div-->
-		<div class="js-menu-screen sliding-panel-fade-screen"></div>
 	</div><!--header-wrapper-->
 </header><!--header-->
+
 
 <!-- ==============================================================
 HERO
@@ -99,21 +94,10 @@ HERO
 			<div class="hero-logo"></div>
 			</h2>
 			<p class="sub-head">Bringing together world-class engineering &amp; industry-leading experience to maximize  your tool performance.</p>
-			<a href="/work" class="btn">See Our Work</a>
+			<a href="/work" class="btn">Learn More</a>
 		</div><!--hero-text-->
 	</div><!--hero-content-->
 </section><!-- hero-wrapper -->
-<!-- ==============================================================
-OUR PROCESS
-=====================================================================-->
-<section class="home-process-wrapper">
-	<div class="home-process-content">
-		<div class="section-header">
-			<h3>Our<br>Process</h3>
-			<p class="header-sub">This is what<br>sets us apart from<br>the competition</p>
-		</div><!--section-header-->
-	</div><!--home-process-wrapper-->
-</section><!-- home-process -->
 
 <!-- ==============================================================
 OUR WORK
@@ -123,12 +107,96 @@ OUR WORK
 	<div class="home-work-content">
 		<div class="section-header">
 			<h3>Our<br>Work</h3>
-			<p class="header-sub">Here are a few<br>examples of what we've been<br>working on lately</p>
+			<p class="header-sub">Here are a few<br>details about us and <br>what we've been working on</p>
 		</div><!--section-header-->
+		<div class="work-circles-wrapper">
+			<div class="work-item">
+				<div class="work-circle">
+					<object type="image/svg+xml" data="assets/images/icon-think.svg">
+						<img src="assets/images/icon-think.png" alt="factory" />
+					</object>
+				</div>
+				<h4>20+</h4>
+				<p class="work-stat">Years In Business</p>
+			</div>
+			<div class="work-item">
+				<div class="work-circle">
+					<object type="image/svg+xml" data="assets/images/icon-customer.svg">
+						<img src="assets/images/icon-customer.png" alt="factory" />
+					</object>
+				</div>
+				<h4>250+</h4>
+				<p class="work-stat">Satisfied Customers</p>
+			</div>
+			<div class="work-item">
+				<div class="work-circle">
+					<object type="image/svg+xml" data="assets/images/icon-tool.svg">
+						<img src="assets/images/icon-tool.png" alt="tools" />
+					</object>
+				</div>
+				<h4>300,000+</h4>
+				<p class="work-stat">Tools Serviced Annually</p>
+			</div>
+		</div><!--work-circles-wrapper-->
 		
 	</div><!--home-work-content-->
+	<div class="work-gallery">
+		<div class="gallery-item">
+			<img src="/assets/images/gallery-01.png" alt="">
+		</div>
+		<div class="gallery-item">
+			<img src="/assets/images/gallery-02.png" alt="">
+		</div>
+		<div class="gallery-item">
+			<img src="/assets/images/gallery-03.png" alt="">
+		</div>
+		<div class="gallery-item">
+			<img src="/assets/images/gallery-04.png" alt="">
+		</div>
+		<div class="gallery-item">
+			<img src="/assets/images/gallery-05.png" alt="">
+		</div>
+	</div>
 </section><!-- home-work-wrapper -->
 
+<!-- ==============================================================
+OUR PROCESS
+=====================================================================-->
+<section class="home-process-wrapper">
+	<div class="home-process-content">
+		<div class="section-header">
+			<h3>Our<br>Process</h3>
+			<p class="header-sub">This is what<br>sets us apart from<br>the competition</p>
+		</div><!--section-header-->
+		<div class="process-item">
+			<div class="process-item-img">
+				<img src="/assets/images/process-plans.jpg" alt="blueprints">
+			</div>
+			<div class="process-item-text">
+				<h4>Reasearch &amp; Development</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, fuga.</p>
+			</div>
+		</div><!--process-item-->
+		<div class="process-item">
+			<div class="process-item-text">
+				<h4>Detail Oriented Machinists</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, fuga.</p>
+			</div>
+			<div class="process-item-img">
+				<img src="/assets/images/process-machine.png" alt="machine">
+			</div>
+		</div><!--process-item-->
+		<div class="process-item">
+			<div class="process-item-img">
+				<img src="/assets/images/process-quality.png" alt="tool">
+			</div>
+			<div class="process-item-text">
+				<h4>Quality Check</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, fuga.</p>
+			</div>
+		</div><!--process-item-->
+	</div><!--home-process-wrapper-->
+</section><!-- home-process -->
 <!-- ==============================================================
 TESTIMONIAL MAYBE??
 =====================================================================-->
@@ -153,7 +221,7 @@ CONTACT
 	<div class="contact-wrapper">
 		<div class="section-header">
 			<h3>Drop Us<br>A Line!</h3>
-			<p class="header-sub">We Love <br>Talking About Tools</p>
+			<p class="header-sub">We Love <br>Talking About<br>Tools</p>
 		</div><!--section-header-->
 		<div class="contact-form">
 			<form action="http://formspree.io/hello@jadetool.ca" method="POST">
@@ -169,7 +237,7 @@ CONTACT
 				</div><!--form-top-->
 				<div class="form-bottom">
 					<div class="form-button-wrapper">
-						<button class="btn" type="submit">SEND MESSAGE</button>
+						<button class="btn-open" type="submit">SEND MESSAGE</button>
 					</div>
 				</div><!--form-bottom-->
 				<input type="hidden" name="_subject" value="New submission!" />
@@ -223,23 +291,19 @@ FOOTER
 
 </footer><!--footer-->
 </main> <!-- end of main wrapper -->
-	<!-- =============================================================
-	SCRIPTS
-	================================================================ -->
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- flickity -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
-	<!-- google-maps -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<!-- smooth-scroll -->
-	<script src="js/jquery.smooth-scroll.js"></script>
-	<!-- typed js -->
-	<script src="js/typed.js"></script>
-	<!-- twitter -->
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	<!-- custom scripts -->
-	<script src="js/scripts.js"></script>
+<!-- =============================================================
+SCRIPTS
+================================================================ -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- slick -->
+<script src="js/slick.min.js"></script>
+<!-- google-maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<!-- smooth-scroll -->
+<script src="js/jquery.smooth-scroll.js"></script>
+<!-- custom scripts -->
+<script src="js/scripts.js"></script>
 </body>
 </html>
 

@@ -1,24 +1,76 @@
-$black: #393939;   
-$blue: #2398DC;
-$light-blue: #7ECAEB;
-$green: #60BEA8;     
-$white: #fff; 
-$pink: #E75C78;
-$grey: #eee;
-$bg-grey: #F7F7F7;
-$text-grey: #838383;
+
 $max-width: 1170px;
 
-$footer: #252525;
-$footer-lines: #2A2A2A;
-$footer-bottom: #222222;
 
 $font-size-base: 20px;
 $font-stack-body: 'Lato';
-$color-body-text: $black;
+$color-body-text: $darkergrey;
 
 $font-weight-light: 300;
 $font-weight-normal: 500;
 $font-weight-black: 900;
 
 $gutter: 10px;
+
+//---MEDIA QUERIES-----------------------//
+// kinda a big deal
+// these are designed to be used with a mobile-first paradigm
+// however, sometimes we want to target certain media queries specifically
+// without having to override them in larger sizes
+// hence our $[size]-up and $[size]-only convention
+// try to use the $[size]-only queries sparingly
+// NOTE: you can change these. Go ahead. Just remember, these queries also affect foundation, not just yeti
+// Questions? Ask Brendan
+
+// numbers (used for DRY calculations in the "up" and "only" queries)
+$smallest-number:	400;
+$smaller-number:    640;
+$small-number:      768;
+$medium-number:     1024;
+$large-number:      1200;
+$larger-number:     1600;
+
+// screen vars (used by foundation as well)
+$smaller-screen:    #{$smaller-number}px;
+$small-screen:      #{$small-number}px;
+$medium-screen:     #{$medium-number}px;
+$large-screen:      #{$large-number}px;
+$larger-screen:     #{$larger-number}px;
+
+// utility fn for printing out media query strings
+@function makeMediaQuery($min, $max:false) {
+    @if $max != false {
+        @return "only screen and (min-width:#{$min}px) and (max-width:#{$max - 1}px)";
+    } @else {
+        @return "only screen and (min-width:#{$min}px)";
+    }
+}
+
+// drum roll... media queries (use these)
+$smallest-up:   makeMediaQuery(0);                  // here purely for consistency
+$smallest-only: makeMediaQuery(0, $smaller-number); // mobile portrait
+$smallest-down:  makeMediaQuery(0, $smallest-number);
+$smaller-up:    makeMediaQuery($smaller-number);
+$smaller-only:  makeMediaQuery($smaller-number, $small-number);
+$smaller-down:  makeMediaQuery(0, $small-number);
+$small-up:      makeMediaQuery($small-number);
+$small-only:    makeMediaQuery($small-number, $medium-number);
+$small-down:    makeMediaQuery(0, $medium-number);
+$medium-up:     makeMediaQuery($medium-number);
+$medium-only:   makeMediaQuery($medium-number, $large-number);
+$medium-down:   makeMediaQuery(0, $large-number);
+$large-up:      makeMediaQuery($large-number);
+$large-only:    makeMediaQuery($large-number, $larger-number);
+$large-down:    makeMediaQuery(0, $larger-number);
+$larger-up:     makeMediaQuery($larger-number);
+
+// keep these queries as well (especially for use with foundation)
+$screen:    "only screen";
+$smaller:   "only screen and (min-width:#{$smaller-screen})";
+$small:     "only screen and (min-width:#{$small-screen})";
+$medium:    "only screen and (min-width:#{$medium-screen})";
+$large:     "only screen and (min-width:#{$large-screen})";
+$larger:    "only screen and (min-width:#{$larger-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait:  "only screen and (orientation: portrait)";
+$retina:    "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx)";

@@ -1,5 +1,26 @@
 $brand-green: #175047;
 $brand-green-light: lighten($brand-green, 3%);
 $green-bg:lighten($brand-green, 75%);
-$brand-gold: #9E8320;
+$green-dark:darken($brand-green, 7%);
+
+//$brand-gold: #9E8320;
+$brand-gold: #D1A917;
+$gold-lighter: #F6CA26;
 $brand-gold-light: lighten($brand-gold, 3%);
+
+$black: #373737;
+$darkergrey: #4A4A4A;
+$darkgrey: #767676;
+$medgrey: #979797;
+$lightgrey:#B9B8B8;
+$lightergrey: #F7F7F7; 
+
+//$black: #393939;   
+$blue: #2398DC;
+$light-blue: #7ECAEB;
+$green: #60BEA8;     
+$white: #fff; 
+$pink: #E75C78;
+//$grey: #eee;
+$bg-grey: #F7F7F7;
+$text-grey: #838383;

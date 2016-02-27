@@ -6,7 +6,16 @@ var app = {};
 // INIT FUNCTION
 // =============================================================================
 app.init = function(){
-
+	// =============================================================================
+	// Slick init
+	// =============================================================================
+	$('.work-gallery').slick({
+		autoplay: true,
+	    speed: 300,
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+        infinite: true,
+	});
 	// =============================================================================
 	// Mobile Menu
 	// =============================================================================
@@ -66,20 +75,20 @@ app.init = function(){
 	// =============================================================================
 	// Typed.JS Options
 	// =============================================================================
-    $(".typing").typed({
-               strings: ["LEARN", "TEACH", "CREATE"],
-               typeSpeed: 150,
-               backSpeed: 70,
-               startDelay: 800,
-               backDelay: 1500,
-               showCursor: true,
-               loop: true,
-               //loopCount: 3,
-               callback: function() {
-               		//$('.typed-cursor').css('opacity', 0);
+    // $(".typing").typed({
+    //            strings: ["LEARN", "TEACH", "CREATE"],
+    //            typeSpeed: 150,
+    //            backSpeed: 70,
+    //            startDelay: 800,
+    //            backDelay: 1500,
+    //            showCursor: true,
+    //            loop: true,
+    //            //loopCount: 3,
+    //            callback: function() {
+    //            		//$('.typed-cursor').css('opacity', 0);
                		
-               }
-    });
+    //            }
+    // });
 	
    // =============================================================================
    // Parallax Scroll
@@ -132,7 +141,6 @@ app.init = function(){
 // DOC READY RUN app.init()
 // =============================================================================
 $(function(){
-	console.log('document ready!');
 	app.init();
 }); // end document ready
 

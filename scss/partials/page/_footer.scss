@@ -14,7 +14,7 @@ footer{
 		}
 	}
 	.footer-top{
-		background: $brand-green-light;
+		background: $brand-green;
 		color: $white;
 		.footer-top-content{
 			@include grid-row();
@@ -22,7 +22,7 @@ footer{
 			text-align: center;
 			.footer-top-column{
 				@include grid-column(4);
-				font-size: 14px;
+				font-size: 16px;
 				.footer-social{
 					padding: 0;
 					li{
@@ -37,7 +37,7 @@ footer{
 		}//footer-top-content
 	} //footer-top
 	.footer-bottom{
-		background: $brand-green;
+		background: $green-dark;
 
 		.footer-bottom-content{
 			@include grid-row();
