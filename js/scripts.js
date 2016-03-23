@@ -12,7 +12,7 @@ app.init = function(){
 	$('.work-gallery').slick({
 		autoplay: true,
 	    speed: 300,
-	    slidesToShow: 4,
+	    slidesToShow: 3,
 	    slidesToScroll: 1,
         infinite: true,
 	});

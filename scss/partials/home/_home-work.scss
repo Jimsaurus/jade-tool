@@ -20,6 +20,9 @@
 				@include grid-column(4);
 				position:relative;
 				margin-top:230px;
+				@media #{$smaller-down}{
+					@include grid-column(12);
+				}
 
 				h4{
 					font-size: 60px;
