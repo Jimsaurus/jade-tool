@@ -1,0 +1,12 @@
+#blog-cms{
+		@include hero-small;
+
+		.hero-wrapper{
+			background: linear-gradient(
+			  rgba(23, 80, 71, 0.8), 
+			  rgba(53, 222, 195, 0.8)
+			), url(../assets/images/contact-bg.jpg);
+			background-size:cover;
+	    	background-position: center center;
+		}
+}

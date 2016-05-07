@@ -1,6 +1,5 @@
 .home-highlights-wrapper{
 	background: $bg-grey;
-	padding-bottom:80px;
 	.home-highlights-content{
 		@include grid-row();
 		padding: 80px 0;
@@ -54,25 +53,10 @@
 						position: absolute;
 						top:20px;
 						left:23px;
-						opacity: 0.6;
+						// opacity: 0.6;
 					}
 				}
 			}
 		}
 	} //home-highlights-content
-	.highlights-gallery{
-		width:100%;
-		margin-botom:0;
-		.gallery-item{
-			max-width:500px;
-		}
-		.slick-track{
-			display: flex;
-			align-items: center;
-			justify-content:center;
-		}
-		img{
-			width:100%
-		}
-	}
 }
