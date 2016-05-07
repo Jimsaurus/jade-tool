@@ -40,9 +40,9 @@ $maincontent-class: 'off-canvas-content' !default;
 /// @type Shadow
 $maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
 
-/// Adds baseline styles for off-canvas. This CSS is required to make the other pieces work.
+/// Adds baseline styles for off-canvas. This CSS is required to make the other pieces highlights.
 @mixin off-canvas-basics {
-  // Extra properties needed on <html> and <body> to make off-canvas work
+  // Extra properties needed on <html> and <body> to make off-canvas highlights
   html,
   body {
     height: 100%;

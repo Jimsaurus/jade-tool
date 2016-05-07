@@ -9,7 +9,7 @@ app.init = function(){
 	// =============================================================================
 	// Slick init
 	// =============================================================================
-	$('.work-gallery').slick({
+	$('.highlights-gallery').slick({
 		autoplay: true,
 	    speed: 300,
 	    slidesToShow: 3,

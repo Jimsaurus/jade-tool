@@ -1,7 +1,7 @@
-.home-work-wrapper{
+.home-highlights-wrapper{
 	background: $bg-grey;
 	padding-bottom:80px;
-	.home-work-content{
+	.home-highlights-content{
 		@include grid-row();
 		padding: 80px 0;
 		position: relative;
@@ -13,10 +13,10 @@
 		.header-sub{
 			//color: $brand-gold;
 		}
-		.work-circles-wrapper{
+		.highlights-circles-wrapper{
 		@include grid-row();
 
-			.work-item{
+			.highlights-item{
 				@include grid-column(4);
 				position:relative;
 				margin-top:230px;
@@ -25,7 +25,7 @@
 					@include grid-column(12);
 					margin-bottom:30px;
 				}
-				.work-item-inner-wrap{
+				.highlights-item-inner-wrap{
 					display:inline-block;
 				}
 				h4{
@@ -34,13 +34,13 @@
 					text-align: left;
 					color: $gold-lighter;
 				}
-				.work-stat{
+				.highlights-stat{
 					font-size: 28px;
 					font-weight: 900;
 					//color: $brand-gold;
 				}
 
-				.work-circle{
+				.highlights-circle{
 					border-radius: 100%;
 					border: 20px solid $white;
 					height:300px;
@@ -59,8 +59,8 @@
 				}
 			}
 		}
-	} //home-work-content
-	.work-gallery{
+	} //home-highlights-content
+	.highlights-gallery{
 		width:100%;
 		margin-botom:0;
 		.gallery-item{
