@@ -20,17 +20,22 @@
 				@include grid-column(4);
 				position:relative;
 				margin-top:230px;
-				@media #{$smaller-down}{
+				text-align: center;
+				@media #{$small-down}{
 					@include grid-column(12);
+					margin-bottom:30px;
 				}
-
+				.work-item-inner-wrap{
+					display:inline-block;
+				}
 				h4{
 					font-size: 60px;
 					line-height: 65px;
+					text-align: left;
 					color: $gold-lighter;
 				}
 				.work-stat{
-					font-size: 30px;
+					font-size: 28px;
 					font-weight: 900;
 					//color: $brand-gold;
 				}

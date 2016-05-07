@@ -52,7 +52,27 @@
     }
 }
 
+@mixin hero-small{
+	.hero-wrapper{
+		height: 450px;
+		min-height: 0;
 
+		.hero-content{
+			padding-top:100px;
+			.hero-text{
+				h2{
+					font-size: 50px;
+					letter-spacing: 1px;
+					@media #{$smaller-down}{
+						font-size: 35px;
+					}
+				}
+			}
+		}
+		
+
+	}
+}
 
 
 

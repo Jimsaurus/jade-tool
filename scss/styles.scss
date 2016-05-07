@@ -26,21 +26,21 @@
 //======================================================
 // PARTIALS
 //======================================================
+	// PAGE
+	@import "partials/page/footer";
+	@import "partials/page/header";
+	@import "partials/page/nav-mobile";
+	@import "partials/page/nav-main";
+	// HOME
+	@import "partials/home/home";
 	// ABOUT
 	@import "partials/about/about";
 	// BLOG
 	@import "partials/blog/blog";
 	// CONTACT
 	@import "partials/contact/contact";
-	// HOME
-	@import "partials/home/home";
-	// PAGE
-	@import "partials/page/footer";
-	@import "partials/page/header";
-	@import "partials/page/nav-mobile";
-	@import "partials/page/nav-main";
-	// PORTFOLIO
-	@import "partials/portfolio/portfolio";
+	// WORK
+	@import "partials/work/work";
 	// PROCESS
 	@import "partials/process/process";
 

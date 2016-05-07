@@ -15,6 +15,10 @@
 			}
 
 			@include underline(10px, inherit, $brand-gold);
+
+			@media #{$smaller-down}{
+				font-size: 25px;
+			}
 		}
 	}
 	.nav-links{

@@ -11,10 +11,19 @@
     background-size:cover;
     background-position: center top;
 
+    @media #{$smaller-down}{
+		height: auto;
+		padding-top:80px;
+    }
+
 	.hero-content{
 		@include grid-row();
 		color:white;
 		padding-top: 150px;
+
+		@media #{$smaller-down}{
+			padding-top: 70px;
+		}
 	}
 	.hero-text{
 		text-align: center;
@@ -23,6 +32,12 @@
 			font-size: 64px;
 			line-height: 77px;
 			position:relative;
+
+			@media #{$smaller-down}{
+				font-size: 39px;
+				line-height: 41px;
+				margin-bottom: 30px;  
+			}
 
 			.hero-logo{
 				position: absolute;
@@ -36,6 +51,13 @@
 			    background: white;
 			    opacity: 0.2;
 			    transform: rotate(45deg);
+
+			    @media #{$smaller-down}{
+					height: 200px;
+					width: 200px;
+					margin-left: -104px;
+					top: -32px;
+			    }
 			}
 		}
 		.sub-head{

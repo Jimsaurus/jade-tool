@@ -31,6 +31,10 @@ h1 {
   text-transform: uppercase;
   font-weight: $font-weight-black;
   margin-bottom: $gutter;
+
+  @media #{$smaller-down}{
+    font-size: 30px;  
+  }
 }
 
 
@@ -40,6 +44,10 @@ h2 {
   text-transform: uppercase;
   font-weight: $font-weight-black;
   margin-bottom: $gutter;
+  @media #{$smaller-down}{
+    font-size: 30px;
+    line-height: 41px;  
+  }
 }
 
 h3 {
@@ -118,6 +126,10 @@ p:last-child {
 p.sub-head{
 	font-size: 22px;
 	font-weight: 400;
+
+	@media #{$smallest-down}{
+		font-size: 18px;
+	}
 }
 // Default site weight is 300 (light)
 .text-weight-normal {

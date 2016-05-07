@@ -15,9 +15,15 @@
     		@include grid-row();
     		.form-left{
     			@include grid-column(6);
+                @media #{$smaller-down}{
+                    @include grid-column(12);
+                }
     		}
     		.form-right{
     			@include grid-column(6);
+                @media #{$smaller-down}{
+                    @include grid-column(12);
+                }
     		}
     	}
     	.form-bottom{

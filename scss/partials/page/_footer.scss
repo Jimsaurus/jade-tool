@@ -6,10 +6,21 @@ footer{
 		font-size: 28px;
 		span{
 			padding: 0 40px;
+			@media #{$smaller-down}{
+				display:none;
+			}
 		}
 		a{
 			&:last-child{
 				color: $brand-gold;
+				@media #{$smaller-down}{
+					margin-top:5px;
+				}
+			}
+			@media #{$smaller-down}{
+				width:100%;
+				display:block;
+				text-align: center;
 			}
 		}
 	}
@@ -23,6 +34,10 @@ footer{
 			.footer-top-column{
 				@include grid-column(4);
 				font-size: 16px;
+				@media #{$small-down}{
+					@include grid-column(12);
+					margin-bottom: 50px;
+				}
 				.footer-social{
 					padding: 0;
 					li{
@@ -33,6 +48,9 @@ footer{
 						font-size: 21px;
 					}
 				}
+			}
+			@media #{$small-down}{
+				padding-bottom:0px;
 			}
 		}//footer-top-content
 	} //footer-top
