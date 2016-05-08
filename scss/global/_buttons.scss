@@ -11,7 +11,7 @@
     -moz-appearance: none;
     appearance: none;
     padding: 15px 30px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 900;
     font-style: normal;
     letter-spacing: 1.6px;
@@ -38,7 +38,7 @@
     -moz-appearance: none;
     appearance: none;
     padding: 15px 30px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 900;
     font-style: normal;
     letter-spacing: 1.6px;
@@ -74,8 +74,8 @@
         color: $white;
         border: 2px solid $green-bg;
         &:hover{
-            background: $brand-green-light;
-            border-color: $brand-green-light;
+            background: $brand-green-lightest;
+            border-color: $brand-green-lightest;
         }
 
     }

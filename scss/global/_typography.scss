@@ -120,6 +120,7 @@ h6 {
 		text-align: left;
 		line-height: 30px;
 		font-weight: 500;
+    font-size: 22px;
     @media #{$smaller-down}{
       @include grid-column(12);
       text-align: center;
@@ -134,6 +135,9 @@ ul,
 ol {
   margin: 0;
   padding:0;
+}
+p{
+  font-weight: $font-weight-normal;
 }
 
 p:last-child {
