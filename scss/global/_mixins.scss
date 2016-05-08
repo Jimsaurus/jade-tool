@@ -71,12 +71,30 @@
 				}
 			}
 		}
-		
-
 	}
 }
 
+@mixin gold-underline{
+	&::after{
+		content:'';
+		display:block;
+		margin: 10px auto;
+		width:100px;
+		height:3px;
+		background: $brand-gold;
+	}
+}
 
+@mixin green-bullet{
+	&::before{
+		content: '\f111';
+		font-family: FontAwesome;
+		display:inline-block;
+		color: $brand-green-lighter;
+		font-size: 10px;
+		margin-right: 5px;
+	}
+}
 
 
 

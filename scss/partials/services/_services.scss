@@ -10,8 +10,86 @@
 	}
 
 	.services-cms-wrapper{
-		background: $bg-grey;
+		padding:0px;
 
+		.services-banner-wrapper{
+			background: $brand-green-light;
+			padding:40px 0;
+
+			.services-banner-inner{
+				@include grid-row();
+				a{
+					@include grid-column(4);
+					text-align: center;
+					color:$white;
+					font-weight: $font-weight-normal;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+					font-size: 20px;
+				}
+			}
+
+		} //banner
+		.services-three-wrapper{
+			@include grid-row($behavior: nest)
+			display: flex;
+			margin: 80px 0;
+
+			> div{
+				@include grid-column(6);
+				padding:60px 0px;
+				text-align:center;
+			}
+			.services-aside{
+				.aside-wrapper{
+					padding: 0 30px;
+				}
+				h3{
+					font-size: 40px;
+					font-weight: $font-weight-black;
+					text-transform: uppercase;
+					@include gold-underline();
+				}
+				p{
+					max-width: 550px;
+					margin:20px auto 0 auto;
+					// font-weight: $font-weight-light;
+				}
+				ul{
+					text-align: left;
+					font-size: 16px;
+					font-weight: normal;
+					text-transform: uppercase;
+					padding-left: 20px;
+					margin: 20px auto 0 auto;
+					max-width: 650px;
+					color: $brand-green;
+
+					li{
+						padding: 10px 0;
+						@include green-bullet();
+						letter-spacing: 1px;
+					}
+				}
+			}
+			.services-aside-img{
+				background: linear-gradient(
+					rgba(96, 77, 8, 0.75),
+					rgba(158, 131, 32, 0.75)
+			    ), url(../assets/images/contact-bg.jpg);
+				background-size:cover;
+		    	background-position: center center;
+			}
+		}
+		
+
+		.services-item-outer{
+			background: $bg-grey;
+			padding: 60px 0;
+			@media #{$small-down}{
+				padding: 30px 0;
+			}
+		}
 		.services-item-wrapper{
 			@include grid-row();
 		}
@@ -21,32 +99,24 @@
 			// background: $white;
 			@media #{$small-down}{
 				@include grid-column(12);
-				margin-bottom: 50px;
+				padding: 10px 0 50px 0;
+				border-bottom: 3px solid $white;
+			}
+			&:last-child{
+				@media #{$small-down}{
+					border-bottom: none;
+				}
 			}
 			h4{
-				position: relative;
-				&::after{
-					content:'';
-					display:block;
-					margin: 10px auto;
-					width:100px;
-					height:3px;
-					background: $brand-gold;
-				}
+				@include gold-underline();
 			}
 			ul{
 				margin-top:16px;
 				li{
 					font-size: 16px;
 					font-weight: $font-weight-normal;
-					&::before{
-						content: '\f111';
-						font-family: FontAwesome;
-						display:inline-block;
-						color: $brand-green-lighter;
-						font-size: 10px;
-						margin-right: 5px;
-					}
+					letter-spacing: 0.5px;
+					@include green-bullet();
 				}
 			}
 		}
