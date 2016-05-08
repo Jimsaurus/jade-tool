@@ -40,8 +40,12 @@
 					position: relative;
 					font-weight: $font-weight-normal;
 					font-size: 25px;
+					line-height: 27px;
 					@media #{$small-down}{
 						margin-left:0;
+					}
+					@media #{$smallest-down}{
+						font-size: 20px;
 					}
 					i{
 						font-size: 30px;
@@ -51,8 +55,9 @@
 						color: $brand-gold;
 						@media #{$small-down}{
 							display:block;
-							margin:15px 0 5px 0;
+							margin:20px 0 5px 0;
 							font-size: 40px;
+							padding:0px;
 						}
 					}
 				}
@@ -70,12 +75,18 @@
 				text-align: left;
 				li{
 					font-size: 35px;
+					@media #{$smallest-down}{
+						font-size: 26px;
+					}
 					&::before{
 						content: "\f00c";
 						font-family: FontAwesome;
 						color: $brand-green-lighter;
 						padding-right: 15px;
 						font-size: 35px;
+						@media #{$smallest-down}{
+							font-size: 30px;
+						}
 					}
 				}
 			}

@@ -84,12 +84,19 @@ h6 {
 .section-header{
 	@include grid-row();
 	margin-bottom: 80px;
+  @media #{$smaller-down}{
+    margin-bottom: 50px;
+  }
 	h3{
 		@include grid-column(6);
 		text-align: right;
 		font-weight: 900;
 		position: relative;
 		z-index:5;
+    @media #{$smaller-down}{
+        @include grid-column(12);
+        text-align: center;
+    }
 		&::after{
 			content:'';
 			display:block;
@@ -102,6 +109,10 @@ h6 {
 			border-radius: 10px;
 			transform:rotate(45deg);
 			z-index:-1;
+      @media #{$smaller-down}{
+        right:41%;
+        top:-14px;
+      }
 		}
 	}
 	.header-sub{
@@ -109,6 +120,11 @@ h6 {
 		text-align: left;
 		line-height: 30px;
 		font-weight: 500;
+    @media #{$smaller-down}{
+      @include grid-column(12);
+      text-align: center;
+
+    }
 	}
 }
 
@@ -127,9 +143,24 @@ p.sub-head{
 	font-size: 22px;
 	font-weight: 400;
 
-	@media #{$smallest-down}{
+	@media #{$smaller-down}{
 		font-size: 18px;
 	}
+}
+p.sub-title{
+  font-size: 30px;
+  font-weight: 400;
+  &::after{
+    content:'.';
+    color: $brand-gold;
+    font-size: 60px;
+    line-height: 0px;
+    padding-left: 1px;
+  }
+
+  @media #{$smaller-down}{
+    font-size: 20px;
+  }
 }
 // Default site weight is 300 (light)
 .text-weight-normal {

@@ -47,6 +47,7 @@ $larger-screen:     #{$larger-number}px;
 }
 
 // drum roll... media queries (use these)
+$mobile-down: makeMediaQuery(0, $smallest-number);
 $smallest-up:   makeMediaQuery(0);                  // here purely for consistency
 $smallest-only: makeMediaQuery(0, $smaller-number); // mobile portrait
 $smallest-down:  makeMediaQuery(0, $smaller-number);

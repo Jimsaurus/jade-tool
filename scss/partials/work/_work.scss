@@ -1,12 +1,69 @@
 #work-cms{
-		@include hero-small;
+	@include hero-small;
 
-		.hero-wrapper{
-			background: linear-gradient(
-			  rgba(23, 80, 71, 0.8), 
-			  rgba(53, 222, 195, 0.8)
-			), url(../assets/images/contact-bg.jpg);
-			background-size:cover;
-	    	background-position: center center;
+	.hero-wrapper{
+		background: linear-gradient(
+		  rgba(23, 80, 71, 0.8), 
+		  rgba(53, 222, 195, 0.8)
+		), url(../assets/images/contact-bg.jpg);
+		background-size:cover;
+    	background-position: center center;
+	}
+	.work-cms-wrapper{
+		
+		background: $bg-grey;
+		.filters{
+			@include grid-row();
+			padding-bottom: 50px;
+			@media #{$smaller-down}{
+				@include grid-row($behavior: nest);
+			}
+			
+			h4{
+				text-align: center;
+			}
+			.filter-material{
+				@include grid-column(4);
+				@media #{$medium-down}{
+					@include grid-column(12);
+				}
+			}
+			.filter-tool{
+				@include grid-column(5);
+				@media #{$medium-down}{
+					@include grid-column(12);
+				}
+			}
+			.filter-condition{
+				@include grid-column(3);
+				@media #{$medium-down}{
+					@include grid-column(12);
+				}
+			}
+			.ui-group{
+				text-align: center;
+				.button-group{
+					display:inline-block;
+				}
+			}
 		}
-}
+		.grid {
+			@include grid-row();
+
+			.color-shape {
+				width:24%;
+				margin:0.5%;
+			  	float: left;
+			  	@media #{$small-down}{
+			  		width: 49%;
+
+			  	}
+				img{
+					width:100%;
+				}
+			}
+		} //grid
+
+		 
+	}//cms-wrapper
+}//#wrapper
