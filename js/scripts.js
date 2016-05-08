@@ -149,8 +149,16 @@ app.init = function(){
    // =============================================================================
 
    // init Isotope
-   var $grid = $('.grid').isotope({
-   	itemSelector: '.color-shape'
+   // var $grid = $('.grid').isotope({
+   // 	itemSelector: '.color-shape'
+   // });
+
+   var $grid = $('.grid').imagesLoaded( function() {
+     // init Isotope after all images have loaded
+     $grid.isotope({
+       // options...
+   		itemSelector: '.color-shape'
+     });
    });
 
    // store filter for each group
