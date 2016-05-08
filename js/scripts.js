@@ -153,13 +153,15 @@ app.init = function(){
    // 	itemSelector: '.color-shape'
    // });
 
-   var $grid = $('.grid').imagesLoaded( function() {
+   var $grid = $('.grid').isotope({
      // init Isotope after all images have loaded
-     $grid.isotope({
-       // options...
-   		itemSelector: '.color-shape'
-     });
+   		itemSelector: '.color-shape',
+   		percentPosition: true
    });
+
+   $grid.imagesLoaded().progress( function() {
+     $grid.isotope('layout');
+   });  
 
    // store filter for each group
    var filters = {};
