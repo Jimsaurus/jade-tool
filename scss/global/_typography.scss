@@ -93,27 +93,30 @@ h6 {
 		font-weight: 900;
 		position: relative;
 		z-index:5;
+    &::after{
+      content:'';
+      display:block;
+      position: absolute;
+      top:-12px;
+      right:-56px;
+      height:120px;
+      width:120px;
+      background-color: rgba($brand-gold, 0.2);
+      border-radius: 10px;
+      transform:rotate(45deg);
+      z-index:-1;
+      @media #{$smaller-down}{
+        position: static;
+        transform:rotate(0);
+        border-radius: 0;
+        
+      }
+    }
     @media #{$smaller-down}{
         @include grid-column(12);
         text-align: center;
+        @include gold-underline();
     }
-		&::after{
-			content:'';
-			display:block;
-			position: absolute;
-			top:-12px;
-			right:-56px;
-			height:120px;
-			width:120px;
-			background-color: rgba($brand-gold, 0.2);
-			border-radius: 10px;
-			transform:rotate(45deg);
-			z-index:-1;
-      @media #{$smaller-down}{
-        right:41%;
-        top:-14px;
-      }
-		}
 	}
 	.header-sub{
 		@include grid-column(6);
