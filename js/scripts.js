@@ -69,17 +69,20 @@ app.init = function(){
 	   // Drop Down Nav
 	   // =============================================================================
 	   $(window).scroll(function () {
-	       if($(this).scrollTop() > 150){
-	           if (!$('.header').hasClass('nav-sticky')){
-	               $('.header').stop().addClass('nav-sticky').css('top', '-150px').animate({
-	                       'top': '0px'
-	                   }, 500);
-	           }
-	       }
-	       else
-	       {
-	           $('.header').removeClass('nav-sticky');
-	       }
+	   		if (window.innerWidth > 1023){
+		       if($(this).scrollTop() > 150){
+		           if (!$('.header').hasClass('nav-sticky')){
+		               $('.header').stop().addClass('nav-sticky').css('top', '-150px').animate({
+		                       'top': '0px'
+		                   }, 500);
+		           }
+		       }
+		       else
+		       {
+		           $('.header').removeClass('nav-sticky');
+		       }
+	   			
+	   		}
 	   });
 	}
 	

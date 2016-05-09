@@ -4,7 +4,7 @@
 		background: linear-gradient(
 		  rgba(23, 80, 71, 0.8), 
 		  rgba(53, 222, 195, 0.8)
-		), url(../assets/images/contact-bg.jpg);
+		), url(../assets/images/services/services-hero.jpg);
 		background-size:cover;
     	background-position: center center;
 	}
@@ -26,6 +26,11 @@
 					text-transform: uppercase;
 					letter-spacing: 3px;
 					font-size: 20px;
+					@media #{$smaller-down}{
+						@include grid-column(12);
+						padding: 5px 0;
+						font-size: 16px;
+					}
 				}
 			}
 
@@ -34,26 +39,42 @@
 			@include grid-row($behavior: nest)
 			display: flex;
 			margin: 80px 0;
+			@media #{$small-down}{
+				display: block;
+			}
 
 			> div{
 				@include grid-column(6);
 				padding:60px 0px;
 				text-align:center;
+				@media #{$small-down}{
+					@include grid-column(12);
+					padding: 20px 0 60px 0;
+				}
 			}
 			.services-aside{
 				.aside-wrapper{
 					padding: 0 30px;
+					@media #{$smaller-down}{
+						padding:0 10px;
+					}
 				}
 				h3{
 					font-size: 40px;
 					font-weight: $font-weight-black;
 					text-transform: uppercase;
 					@include gold-underline();
+					@media #{$smaller-down}{
+						font-size: 30px;
+					}
 				}
 				p{
 					max-width: 550px;
 					margin:20px auto 0 auto;
 					// font-weight: $font-weight-light;
+					@media #{$smaller-down}{
+						font-size: 16px;
+					}
 				}
 				ul{
 					text-align: left;
@@ -69,25 +90,73 @@
 						padding: 10px 0;
 						@include green-bullet();
 						letter-spacing: 1px;
+						@media #{$smaller-down}{
+							font-size: 14px;
+						}
 					}
 				}
 			}
 			.services-aside-img{
-				background: linear-gradient(
+		    	@media #{$small-down}{
+		    		height: 200px;
+		    	}
+
+		    	&.mobile-only{
+		    		display:none;
+		    		@media #{$small-down}{
+		    			display: block;
+		    		}
+		    	}
+		    	&.desktop-only{
+		    		display:block;
+		    		@media #{$small-down}{
+		    			display:none;
+		    		}
+		    	}
+			}
+			&.services-design{
+				.services-aside-img{
+					background: linear-gradient(
 					rgba(96, 77, 8, 0.75),
 					rgba(158, 131, 32, 0.75)
-			    ), url(../assets/images/contact-bg.jpg);
-				background-size:cover;
-		    	background-position: center center;
+			    ), url(../assets/images/services/services-design.jpg);
+					background-size:cover;
+		    		background-position: center center;
+				}
+			}
+			&.services-manufacture{
+				.services-aside-img{
+					background: linear-gradient(
+					rgba(96, 77, 8, 0.75),
+					rgba(158, 131, 32, 0.75)
+			    ), url(../assets/images/services/services-manufature.jpg);
+					background-size:cover;
+		    		background-position: center center;
+				}
+			}
+			&.services-regrind{
+				.services-aside-img{
+					background: linear-gradient(
+					rgba(96, 77, 8, 0.75),
+					rgba(158, 131, 32, 0.75)
+			    ), url(../assets/images/services/services-regrind.jpg);
+					background-size:cover;
+		    		background-position: center center;
+				}
 			}
 		}
 		
 
 		.services-item-outer{
 			background: $bg-grey;
-			padding: 60px 0;
+			padding: 80px 0;
 			@media #{$small-down}{
-				padding: 30px 0;
+				padding: 100px 0 30px 0;
+			}
+			.section-header{
+				@media #{$small-down}{
+					margin-bottom: 40px;
+				}
 			}
 		}
 		.services-item-wrapper{
@@ -99,7 +168,7 @@
 			// background: $white;
 			@media #{$small-down}{
 				@include grid-column(12);
-				padding: 10px 0 50px 0;
+				padding: 40px 5px 50px 5px;
 				border-bottom: 3px solid $white;
 			}
 			&:last-child{
@@ -109,6 +178,14 @@
 			}
 			h4{
 				@include gold-underline();
+				@media #{$smaller-down}{
+					font-size: 20px;
+				}
+			}
+			p{
+				@media #{$small-down}{
+					font-size: 18px;
+				}
 			}
 			ul{
 				margin-top:16px;
@@ -123,7 +200,7 @@
 		.services-item-img{
 			object{
 				width: 70%;
-				height: 200px;
+				height: 100px;
 			}
 			@media #{$small-down}{
 				max-width: 200px;
