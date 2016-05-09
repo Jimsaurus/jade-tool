@@ -5,8 +5,51 @@
 			background: linear-gradient(
 			  rgba(23, 80, 71, 0.8), 
 			  rgba(53, 222, 195, 0.8)
-			), url(../assets/images/contact-bg.jpg);
+			), url(../assets/images/about/about-hero.jpg);
 			background-size:cover;
 	    	background-position: center center;
 		}
+}
+.about-cms-wrapper{
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.about-cms-inner{
+	@include grid-row($behavior: nest);
+
+	.about-mission{
+		@include grid-row();
+		padding-top: 80px;
+		padding-bottom: 80px;
+		.mission-text{
+			max-width: 700px;
+			margin:0 auto;
+			font-size: 30px;
+			font-weight: $font-weight-light;
+			text-align: center;
+			padding: 0 10px;
+		}
+	}
+	.about-facility{
+		background: $bg-grey;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		.facility-images{
+			@include grid-row($behavior: nest)
+
+			div{
+				@include grid-column(6);
+				background-image: url(../assets/images/about/about-facility-01.jpg);
+				background-size:cover;
+	    		background-position: center center;
+				height: 400px;
+				margin-bottom: 20px;
+				@media #{$small-down}{
+					@include grid-column(12);
+					height: 300px;
+				}
+			}
+		}
+
+	}
 }
